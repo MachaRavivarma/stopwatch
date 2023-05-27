@@ -46,7 +46,7 @@ class Stopwatch extends Component {
   }
 
   render() {
-    const displayTime = `${this.renderMinutes}:${this.renderSeconds}`
+    const displayTime = `${this.renderMinutes()}:${this.renderSeconds()}`
 
     return (
       <div className="app-container">
@@ -84,7 +84,7 @@ class Stopwatch extends Component {
                 type="button"
                 onClick={this.restartButton}
               >
-                Start
+                Reset
               </button>
             </div>
           </div>
